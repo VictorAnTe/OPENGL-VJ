@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\04-transforms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|04-transforms\\04-transforms.vcxproj|E:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\04-transforms\\04-transforms\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|04-transforms\\04-transforms.vcxproj|solutionrelative:04-transforms\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|04-transforms\\04-transforms.vcxproj|E:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\04-transforms\\04-transforms\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|04-transforms\\04-transforms.vcxproj|solutionrelative:04-transforms\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\04-transforms\\04-transforms\\main.cpp",
+              "RelativeDocumentMoniker": "04-transforms\\main.cpp",
+              "ToolTip": "E:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\04-transforms\\04-transforms\\main.cpp",
+              "RelativeToolTip": "04-transforms\\main.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-09T19:34:45.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Scene.cpp",
+              "DocumentMoniker": "E:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\04-transforms\\04-transforms\\Scene.cpp",
+              "RelativeDocumentMoniker": "04-transforms\\Scene.cpp",
+              "ToolTip": "E:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\04-transforms\\04-transforms\\Scene.cpp",
+              "RelativeToolTip": "04-transforms\\Scene.cpp",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-09T19:22:38.429Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

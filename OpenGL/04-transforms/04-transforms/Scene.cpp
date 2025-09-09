@@ -32,6 +32,7 @@ void Scene::update(int deltaTime)
 void Scene::render()
 {
 	glm::mat4 modelview;
+	const float WINDOW_WIDTH = 640.f; // Ancho de tu ventana
 
 	// We can now, using matrices, draw four quads at different screen locations
 	// using a single Quad object.
@@ -39,31 +40,43 @@ void Scene::render()
 	program.setUniformMatrix4f("projection", projection);
 	program.setUniform4f("color", 1.0f, 1.0f, 1.0f, 1.0f);
 
+	float translateX = (currentTime / 10.0f) + 100.0f;
+
+	// Esto mueve el cuadrado de vuelta a la izquierda cuando sale por la derecha
+	translateX = fmod(translateX, WINDOW_WIDTH);
+
 	modelview = glm::translate(glm::mat4(1.0f), glm::vec3(128.f, 48.f, 0.f));
-	modelview = glm::translate(modelview, glm::vec3(64.f, 64.f, 0.f));
-	modelview = glm::rotate(modelview, -currentTime / 1000.f, glm::vec3(0.0f, 0.0f, 1.0f));
-	modelview = glm::translate(modelview, glm::vec3(-64.f, -64.f, 0.f));
+	modelview = glm::translate(modelview, glm::vec3(translateX, 0.f, 0.f));
+	//// La mueve a la posición original
+	//modelview = glm::translate(modelview, glm::vec3(64.f, 64.f, 0.f));
+	//// Efectua el giro
+	//modelview = glm::rotate(modelview, -currentTime / 1000.f, glm::vec3(0.0f, 0.0f, 1.0f));
+	//// La mueve al origen de coordenadas
+	//modelview = glm::translate(modelview, glm::vec3(-64.f, -64.f, 0.f));
 	program.setUniformMatrix4f("modelview", modelview);
 	quad->render();
 
 	modelview = glm::translate(glm::mat4(1.0f), glm::vec3(384.f, 48.f, 0.f));
-	modelview = glm::translate(modelview, glm::vec3(64.f, 64.f, 0.f));
+	modelview = glm::translate(modelview, glm::vec3(translateX, 0.f, 0.f));
+	/*modelview = glm::translate(modelview, glm::vec3(64.f, 64.f, 0.f));
 	modelview = glm::rotate(modelview, currentTime / 1000.f, glm::vec3(0.0f, 0.0f, 1.0f));
-	modelview = glm::translate(modelview, glm::vec3(-64.f, -64.f, 0.f));
+	modelview = glm::translate(modelview, glm::vec3(-64.f, -64.f, 0.f));*/
 	program.setUniformMatrix4f("modelview", modelview);
 	quad->render();
 
 	modelview = glm::translate(glm::mat4(1.0f), glm::vec3(128.f, 304.f, 0.f));
-	modelview = glm::translate(modelview, glm::vec3(64.f, 64.f, 0.f));
+	modelview = glm::translate(modelview, glm::vec3(translateX, 0.f, 0.f));
+	/*modelview = glm::translate(modelview, glm::vec3(64.f, 64.f, 0.f));
 	modelview = glm::rotate(modelview, currentTime / 1000.f, glm::vec3(0.0f, 0.0f, 1.0f));
-	modelview = glm::translate(modelview, glm::vec3(-64.f, -64.f, 0.f));
+	modelview = glm::translate(modelview, glm::vec3(-64.f, -64.f, 0.f));*/
 	program.setUniformMatrix4f("modelview", modelview);
 	quad->render();
 
 	modelview = glm::translate(glm::mat4(1.0f), glm::vec3(384.f, 304.f, 0.f));
-	modelview = glm::translate(modelview, glm::vec3(64.f, 64.f, 0.f));
+	modelview = glm::translate(modelview, glm::vec3(translateX, 0.f, 0.f));
+	/*modelview = glm::translate(modelview, glm::vec3(64.f, 64.f, 0.f));
 	modelview = glm::rotate(modelview, -currentTime / 1000.f, glm::vec3(0.0f, 0.0f, 1.0f));
-	modelview = glm::translate(modelview, glm::vec3(-64.f, -64.f, 0.f));
+	modelview = glm::translate(modelview, glm::vec3(-64.f, -64.f, 0.f));*/
 	program.setUniformMatrix4f("modelview", modelview);
 	quad->render();
 }
