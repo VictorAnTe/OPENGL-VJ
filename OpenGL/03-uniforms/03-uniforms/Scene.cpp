@@ -32,18 +32,36 @@ void Scene::update(int deltaTime)
 
 void Scene::render()
 {
+	// Calculamos un valor de escalado que dependera del tiempo para darle animación a los rectangulos
+	// Estelor oscilará entre 0.0 i 1.0
+	float scaleValue = (sin(currentTime / 1000.f) + 1.0f) / 2.0f;
+	
 	// Change quad colors using elapsed time
 	float value = (sin(currentTime / 1000.f) + 1.0f) / 2.0f;
 
+	// Este valor oscila entre 1 (blanco) y 0 (negro)
+	float inverted_value = 1.0f - value;
+
 	program.use();
-	program.setUniform4f("color", value, value, value, 1.0f);
+	program.setUniform2f("scale", scaleValue, scaleValue);
+
+	// Gray to white
+	program.setUniform4f("color", inverted_value, inverted_value, inverted_value, 1.0f);
 	quads[0]->render();
-	program.setUniform4f("color", value, 0, 0, 1.0f);
+
+	// Red to white
+	program.setUniform4f("color", 1.0f, inverted_value, inverted_value, 1.0f);
 	quads[1]->render();
-	program.setUniform4f("color", 0, value, 0, 1.0f);
+
+	// Green to white
+	program.setUniform4f("color", inverted_value, 1.0f, inverted_value, 1.0f);
 	quads[2]->render();
-	program.setUniform4f("color", 0, 0, value, 1.0f);
+
+	// Blue to white
+	program.setUniform4f("color", inverted_value, inverted_value, 1.0f, 1.0f);
 	quads[3]->render();
+
+	//Al empezar desde el 1, 1, 1 en cada color hasta el 1, 0, 0 (por ejemplo el rojo) estamos haciendo que la conversión sea desde el blanco al color original.
 }
 
 void Scene::initShaders()

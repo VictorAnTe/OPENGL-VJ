@@ -8,7 +8,7 @@ Scene::Scene()
 		quads[i] = NULL;
 
 	circle = NULL;
-	num_seg = 25;
+	num_seg = 75;
 }
 
 Scene::~Scene()

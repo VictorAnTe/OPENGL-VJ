@@ -44,6 +44,7 @@ private:
 	bool keys[GLFW_KEY_LAST+1]; // Store key states so that 
 							    // we can have access at any time
 
+	float color[4];
 };
 
 
