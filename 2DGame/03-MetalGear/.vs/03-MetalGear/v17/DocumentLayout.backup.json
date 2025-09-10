@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D619057B-9012-4913-8C89-DA4560F9F05F}|03-MetalGear\\03-MetalGear.vcxproj|D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D619057B-9012-4913-8C89-DA4560F9F05F}|03-MetalGear\\03-MetalGear.vcxproj|solutionrelative:03-MetalGear\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D619057B-9012-4913-8C89-DA4560F9F05F}|03-MetalGear\\03-MetalGear.vcxproj|D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D619057B-9012-4913-8C89-DA4560F9F05F}|03-MetalGear\\03-MetalGear.vcxproj|solutionrelative:03-MetalGear\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D619057B-9012-4913-8C89-DA4560F9F05F}|03-MetalGear\\03-MetalGear.vcxproj|D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D619057B-9012-4913-8C89-DA4560F9F05F}|03-MetalGear\\03-MetalGear.vcxproj|solutionrelative:03-MetalGear\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\main.cpp",
-              "RelativeDocumentMoniker": "03-MetalGear\\main.cpp",
-              "ToolTip": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\main.cpp",
-              "RelativeToolTip": "03-MetalGear\\main.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-10T10:54:54.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Game.cpp",
-              "DocumentMoniker": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\Game.cpp",
-              "RelativeDocumentMoniker": "03-MetalGear\\Game.cpp",
-              "ToolTip": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\Game.cpp",
-              "RelativeToolTip": "03-MetalGear\\Game.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-10T10:54:35.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Game.h",
-              "DocumentMoniker": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\Game.h",
-              "RelativeDocumentMoniker": "03-MetalGear\\Game.h",
-              "ToolTip": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\2DGame\\03-MetalGear\\03-MetalGear\\Game.h",
-              "RelativeToolTip": "03-MetalGear\\Game.h",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-10T10:52:18.089Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
