@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\",
+  "WorkspaceRootPath": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|solutionrelative:01-window\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|solutionrelative:01-window\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5BE6CA2A-E5A8-40CC-9015-047CE0C78036}|01-window\\01-window.vcxproj|solutionrelative:01-window\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,24 +28,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Game.h",
-              "DocumentMoniker": "C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.h",
+              "DocumentMoniker": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.h",
               "RelativeDocumentMoniker": "01-window\\Game.h",
-              "ToolTip": "C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.h",
+              "ToolTip": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.h",
               "RelativeToolTip": "01-window\\Game.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-09T12:51:18.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T12:51:18.592Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.cpp",
+              "DocumentMoniker": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.cpp",
               "RelativeDocumentMoniker": "01-window\\Game.cpp",
-              "ToolTip": "C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.cpp",
+              "ToolTip": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\Game.cpp",
               "RelativeToolTip": "01-window\\Game.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-09T12:50:40.136Z",
               "EditorCaption": ""
@@ -54,14 +53,13 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\main.cpp",
+              "DocumentMoniker": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\main.cpp",
               "RelativeDocumentMoniker": "01-window\\main.cpp",
-              "ToolTip": "C:\\Users\\victor.andujar\\Downloads\\OpenGL_VS2015\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\main.cpp",
+              "ToolTip": "D:\\7o\\VJ\\LAB\\OpenGL_VS2015\\OpenGL\\01-window\\01-window\\main.cpp",
               "RelativeToolTip": "01-window\\main.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-09T12:49:15.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-09T12:49:15.181Z"
             }
           ]
         }

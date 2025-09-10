@@ -2,4 +2,4 @@
   main.cpp
   Generating Code...
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  01-window.vcxproj -> E:\7o\VJ\LAB\OpenGL_VS2015\OpenGL\01-window\Debug\01-window.exe
+  01-window.vcxproj -> D:\7o\VJ\LAB\OpenGL_VS2015\OpenGL\01-window\Debug\01-window.exe
