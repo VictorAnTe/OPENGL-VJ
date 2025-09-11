@@ -3,12 +3,14 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include "Sprite.h"
 
+/* Creador de fabrica de la clase Sprite */
 Sprite* Sprite::createSprite(const glm::vec2& quadSize, const glm::vec2& sizeInSpritesheet, Texture* spritesheet, ShaderProgram* program)
 {
 	Sprite* quad = new Sprite(quadSize, sizeInSpritesheet, spritesheet, program);
 	return quad;
 }
 
+/* Constructor de la clase Sprite */
 Sprite::Sprite(const glm::vec2& quadSize, const glm::vec2& sizeInSpritesheet, Texture* spritesheet, ShaderProgram* program)
 {
 	float vertices[24] = { 0.f, 0.f, 0.f, 0.f,
@@ -31,6 +33,7 @@ Sprite::Sprite(const glm::vec2& quadSize, const glm::vec2& sizeInSpritesheet, Te
 	position = glm::vec2(0.f);
 }
 
+/* Actualiza las animaciones */
 void Sprite::update(int deltaTime)
 {
 	if (currentAnimation >= 0)
@@ -45,6 +48,7 @@ void Sprite::update(int deltaTime)
 	}
 }
 
+/* Dibuja el sprite en pantalla */
 void Sprite::render() const
 {
 	glm::mat4 modelview = glm::translate(glm::mat4(1.0f), glm::vec3(position.x, position.y, 0.f));
@@ -59,29 +63,34 @@ void Sprite::render() const
 	glDisable(GL_TEXTURE_2D);
 }
 
+/* Libera la memoria del VBO en la GPU */
 void Sprite::free()
 {
 	glDeleteBuffers(1, &vbo);
 }
 
+/* Funciones para manejar las animaciones del sprite */
 void Sprite::setNumberAnimations(int nAnimations)
 {
 	animations.clear();
 	animations.resize(nAnimations);
 }
 
+/* Establece la velocidad de una animacion especifica */
 void Sprite::setAnimationSpeed(int animId, int keyframesPerSec)
 {
 	if (animId < int(animations.size()))
 		animations[animId].millisecsPerKeyframe = 1000.f / keyframesPerSec;
 }
 
+/* Añade un keyframe a una animacion especifica */
 void Sprite::addKeyframe(int animId, const glm::vec2& displacement)
 {
 	if (animId < int(animations.size()))
 		animations[animId].keyframeDispl.push_back(displacement);
 }
 
+/* Cambia la animacion actual del sprite a la animacion animId */
 void Sprite::changeAnimation(int animId)
 {
 	if (animId < int(animations.size()))
@@ -93,11 +102,13 @@ void Sprite::changeAnimation(int animId)
 	}
 }
 
+/* Devuelve el ID de la animacion que se esta reproduciendo */
 int Sprite::animation() const
 {
 	return currentAnimation;
 }
 
+/* Permite cambiar la posicion del sprite en la pantalla */
 void Sprite::setPosition(const glm::vec2& pos)
 {
 	position = pos;
