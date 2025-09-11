@@ -4,8 +4,8 @@
 
 #include <glm/glm.hpp>
 #include <GL/glew.h>
-// #include "Texture.h"
-// #include "ShaderProgram.h"
+#include "Texture.h"
+#include "ShaderProgram.h"
 
 // Class Tilemap is capable of loading a tile map from a text file in a very
 // simple format (see level01.txt for an example). With this information
@@ -16,11 +16,11 @@ class TileMap
 {
 
 private:
-	TileMap(const string &levelFile, const glm::vec2 &minCoords /*, ShaderProgram &program */);
+	TileMap(const string &levelFile, const glm::vec2 &minCoords, ShaderProgram &program);
 
 public:
 	// Tile maps can only be created inside an OpenGL context
-	static TileMap *createTileMap(const string &levelFile, const glm::vec2 &minCoords/* , ShaderProgram &program */);
+	static TileMap *createTileMap(const string &levelFile, const glm::vec2 &minCoords, ShaderProgram &program);
 
 	~TileMap();
 
@@ -35,7 +35,7 @@ public:
 
 private:
 	bool loadLevel(const string &levelFile);
-	void prepareArrays(const glm::vec2 &minCoords/* , ShaderProgram &program */);
+	void prepareArrays(const glm::vec2 &minCoords, ShaderProgram &program);
 
 private:
 	GLuint vao;
@@ -44,7 +44,7 @@ private:
 	int nTiles;
 	glm::ivec2 position, mapSize, tilesheetSize;
 	int tileSize, blockSize;
-	//Texture tilesheet;
+	Texture tilesheet;
 	glm::vec2 tileTexSize;
 	int *map;
 };

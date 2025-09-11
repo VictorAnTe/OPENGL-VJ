@@ -6,25 +6,29 @@
 
 using namespace std;
 
-TileMap *TileMap::createTileMap(const string &levelFile, const glm::vec2 &minCoords/* , ShaderProgram &program */)
+/* Constructor de fabrica de TileMap */
+TileMap *TileMap::createTileMap(const string &levelFile, const glm::vec2 &minCoords, ShaderProgram &program)
 {
 	TileMap *map = new TileMap(levelFile, minCoords, program);
 
 	return map;
 }
 
-TileMap::TileMap(const string &levelFile, const glm::vec2 &minCoords/* , ShaderProgram &program */)
+/* Inicializador del objeto TileMap */
+TileMap::TileMap(const string &levelFile, const glm::vec2 &minCoords, ShaderProgram &program)
 {
 	loadLevel(levelFile);
 	prepareArrays(minCoords, program);
 }
 
+/* Destructor de la clase TileMap */
 TileMap::~TileMap()
 {
 	if(map != NULL)
 		delete map;
 }
 
+/* Se encarga de dibujar el mapa */
 void TileMap::render() const
 {
 	glEnable(GL_TEXTURE_2D);
@@ -36,14 +40,13 @@ void TileMap::render() const
 	glDisable(GL_TEXTURE_2D);
 }
 
+/* Libera la GPU */
 void TileMap::free()
 {
 	glDeleteBuffers(1, &vbo);
 }
 
-
-//REVISAR ESTO
-
+/* Carga el nivel desde un archivo de texto */
 bool TileMap::loadLevel(const string &levelFile)
 {
 	ifstream fin;
@@ -97,6 +100,7 @@ bool TileMap::loadLevel(const string &levelFile)
 	return true;
 }
 
+/* construye la geometría del mapa para la GPU */
 void TileMap::prepareArrays(const glm::vec2 &minCoords, ShaderProgram &program)
 {
 	int tile;
